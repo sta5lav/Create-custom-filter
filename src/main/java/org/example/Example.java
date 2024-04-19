@@ -6,7 +6,7 @@ import java.util.logging.LogRecord;
 public class Example implements Filter {
     @Override
     public boolean isLoggable(LogRecord record) {
-        return true;
+        return false;
     }
 
     Object apply(Object o){
