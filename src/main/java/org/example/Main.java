@@ -11,7 +11,7 @@ public class Main {
 
     }
 
-    public static Object[] filter(Object[] array, Filter filter){
+    public static Object[] filter(Object[] array, FilterImpl filter){
         List<?> lst = Arrays.stream(array).toList();
         return lst.stream().map(filter::apply).toArray();
     }
