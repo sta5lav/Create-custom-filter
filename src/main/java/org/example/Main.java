@@ -17,8 +17,7 @@ public class Main {
 
     public static Object[] filter(Object[] array, Example example){
         List<?> lst = Arrays.stream(array).toList();
-        lst.stream().map(s -> example.apply(array));
-        return lst.toArray();
+        return lst.stream().map(example::apply).toArray();
         /*for (int i = 0; i < newArray.length; i++) {
             newArray[i] = example.apply(array[i]);
         }
