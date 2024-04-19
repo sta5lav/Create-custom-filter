@@ -18,11 +18,6 @@ public class Main {
     public static Object[] filter(Object[] array, Example example){
         List<?> lst = Arrays.stream(array).toList();
         return lst.stream().map(example::apply).toArray();
-        /*for (int i = 0; i < newArray.length; i++) {
-            newArray[i] = example.apply(array[i]);
-        }
-        return newArray;*/
-
     }
 }
 
