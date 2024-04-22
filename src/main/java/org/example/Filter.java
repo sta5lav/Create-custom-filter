@@ -1,3 +1,7 @@
 package org.example;
 
-public interface Filter { }
+public interface Filter {
+
+    static void apply(Object o) {}
+
+}
