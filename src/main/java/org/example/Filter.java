@@ -2,6 +2,6 @@ package org.example;
 
 public interface Filter {
 
-    static void apply(Object o) {}
+     Object apply(Object o);
 
 }

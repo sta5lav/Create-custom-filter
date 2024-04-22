@@ -12,13 +12,13 @@ public class Main {
         System.out.println("*********************" + "  outputInfo for example " + "*********************");
 
         System.out.println(arrayToMap(new String[]{"one", "one", "two", "four"}));
-        Integer[] inter = new Integer[]{1, 2, 3, 4, 5, 6, 7, 7, 7, 7, 7, 7, 7};
-        System.out.println(arrayToMap(inter));
+        int[] inter = new int[]{1, 2, 3, 4, 5, 6, 7, 7, 7, 7, 7, 7, 7};
+        System.out.println(arrayToMap(new Object[]{inter}));
 
     }
 
     //2 практическое задание в коллекциях
-    public static <T> Map<? extends Object, ? extends Number> arrayToMap(T[] array) {
+    public static <T> Map<? super Object, ? extends Number> arrayToMap(T[] array) {
         List<T> elements = List.of(array);
 
         //1 Способ
